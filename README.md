@@ -33,6 +33,11 @@ Flip the cards, find the pairs, and challenge your memory! 🃏
 
 ---
 
+**Assets**
+Cards by: https://itch.io/profile/grijzelucht
+
+---
+
 ## 🚀 Getting Started
 Download the latest release 
 
