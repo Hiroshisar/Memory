@@ -1,4 +1,77 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="456" height="456" viewBox="0 0 456 456" version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <rect x="0" y="0" width="456" height="456" fill="#512BD4" />
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Memory Game Icon</title>
+  <desc>Two overlapping cards with a highlighted matching pair, for a memory game.</desc>
+
+  <!-- ====== Theme variables (edit these) ====== -->
+  <style>
+    :root{
+      --bg1:#1e1e2e;      /* background outer */
+      --bg2:#2a2a40;      /* background inner */
+      --card-back:#5a6cff;/* left card */
+      --card-front:#8a74ff;/* right card */
+      --tile:#eae9ff;     /* tiles on front card */
+      --match:#ffd54a;    /* highlighted matching tiles */
+      --stroke:#0f0f1a;   /* subtle stroke */
+    }
+  </style>
+
+  <!-- ====== Background ====== -->
+  <defs>
+    <linearGradient id="g-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="var(--bg1)"/>
+      <stop offset="1" stop-color="var(--bg2)"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- rounded square background -->
+  <rect x="24" y="24" rx="64" ry="64" width="464" height="464" fill="url(#g-bg)"/>
+
+  <!-- ====== Cards ====== -->
+  <!-- back card -->
+  <g filter="url(#shadow)" transform="translate(120,120) rotate(-12)">
+    <rect x="0" y="0" rx="24" ry="24" width="220" height="300" fill="var(--card-back)" />
+    <!-- simple pattern on back -->
+    <g opacity="0.2">
+      <circle cx="40" cy="60" r="8" fill="white"/>
+      <circle cx="80" cy="100" r="8" fill="white"/>
+      <circle cx="120" cy="60" r="8" fill="white"/>
+      <circle cx="160" cy="100" r="8" fill="white"/>
+      <circle cx="200" cy="60" r="8" fill="white"/>
+    </g>
+    <rect x="0" y="0" rx="24" ry="24" width="220" height="300" fill="none" stroke="var(--stroke)" stroke-opacity="0.25"/>
+  </g>
+
+  <!-- front card -->
+  <g filter="url(#shadow)" transform="translate(200,100) rotate(8)">
+    <rect x="0" y="0" rx="24" ry="24" width="220" height="300" fill="var(--card-front)"/>
+    <!-- grid of 2x2 tiles with a matching pair highlighted -->
+    <g transform="translate(40,70)">
+      <!-- row 1 -->
+      <rect x="0"   y="0"   rx="12" ry="12" width="60" height="60" fill="var(--tile)"/>
+      <rect x="80"  y="0"   rx="12" ry="12" width="60" height="60" fill="var(--match)"/>
+      <!-- row 2 -->
+      <rect x="0"   y="80"  rx="12" ry="12" width="60" height="60" fill="var(--tile)"/>
+      <rect x="80"  y="80"  rx="12" ry="12" width="60" height="60" fill="var(--match)"/>
+      <!-- subtle separators -->
+      <g opacity="0.15">
+        <rect x="0"  y="0"   width="60" height="60" rx="12" ry="12" fill="none" stroke="var(--stroke)"/>
+        <rect x="80" y="0"   width="60" height="60" rx="12" ry="12" fill="none" stroke="var(--stroke)"/>
+        <rect x="0"  y="80"  width="60" height="60" rx="12" ry="12" fill="none" stroke="var(--stroke)"/>
+        <rect x="80" y="80"  width="60" height="60" rx="12" ry="12" fill="none" stroke="var(--stroke)"/>
+      </g>
+    </g>
+
+    <!-- small badge/check to suggest a match -->
+    <g transform="translate(160,20)">
+      <circle cx="0" cy="0" r="18" fill="var(--match)" />
+      <path d="M-8,0 l6,6 l12,-14" fill="none" stroke="var(--stroke)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+    </g>
+
+    <rect x="0" y="0" rx="24" ry="24" width="220" height="300" fill="none" stroke="var(--stroke)" stroke-opacity="0.25"/>
+  </g>
 </svg>
