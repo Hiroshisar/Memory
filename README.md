@@ -2,7 +2,7 @@
 
 [![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![MAUI](https://img.shields.io/badge/MAUI-Cross%20Platform-512BD4?logo=visualstudio&logoColor=white)](https://learn.microsoft.com/dotnet/maui/)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Android%20%7C%20iOS-blue)]()
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Android-blue)]()
 [![License](https://img.shields.io/badge/License-Non--Commercial-orange)](LICENSE)
 
 A simple **Memory Game** built with **.NET MAUI**.  
