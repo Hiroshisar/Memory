@@ -33,8 +33,8 @@ Flip the cards, find the pairs, and challenge your memory! 🃏
 
 ---
 
-**Assets**
-Cards by: https://itch.io/profile/grijzelucht
+## Assets
+Cards: https://grijzelucht.itch.io/pixel-playing-cards
 
 ---
 
