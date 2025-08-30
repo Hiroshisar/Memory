@@ -34,6 +34,10 @@ Flip the cards, find the pairs, and challenge your memory! 🃏
 ---
 
 ## 🚀 Getting Started
+Download the latest release 
+
+OR
+
 Clone the repository and run the game:
 
 ```bash
